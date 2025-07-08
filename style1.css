@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: #111;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e10600;
+}
+
+nav a{
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    background: url(car1.jpg) center/cover no-repeat;
+    animation: fadein 2s ease-out;
+}
+.hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px #000;
+    animation: slideinDown 1s ease-out;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 500px;
+    animation: fadein 2s ease-out;
+}
+
+.cta-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: #e10600;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.cta-btn:hover{
+    background: #ff2d2d
+}
+
+.stats {
+    background: #111;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.stat h2 {
+    font-size: 2rem;
+    color: #e10600;
+}
+
+.stat p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+@media(max-width:768px ) {
+    .stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+ 
+
+     @keyframes fadein { 
+        from {opacity:0}
+        to {opacity:1}  }
+    
+
+     @keyframes slideinDown {
+        from {opacity:0 ;
+        transform:translateY(-50px)}
+        to {opacity:1 ;
+         transform:translateY(0)}  
+    }
+     @keyframes pulse {
+        0% {transform:scale(1)}
+        50% {transform:scale(1.05)}
+        100% {transform:scale(1)}
+     }
+
+
+
+
